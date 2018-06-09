@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>INGRESAR</title>
+  
+</head>
+<body>
+    <header>
+        <h1>INGRESAR</h1>
+    </header>
+
+    <div>
+        Nombre:<input type="text" id="txt_nombre"><br>
+        Apellido:<input type="text" id="txt_apellido"><br>
+        Edad:<input type="text" id="txt_edad"><br>
+
+        <button onclick="agregarDatos()">Aceptar</button>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyD1sYzTu0vBmQ7YWf2dvmstXr3RyOgTHCE",
+        authDomain: "crud-testing1.firebaseapp.com",
+        databaseURL: "https://crud-testing1.firebaseio.com",
+        projectId: "crud-testing1",
+        storageBucket: "crud-testing1.appspot.com",
+        messagingSenderId: "305685505803"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script src="ingresar.js">
+        
+    </script>
+</body>
+</html>
